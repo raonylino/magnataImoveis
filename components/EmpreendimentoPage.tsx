@@ -25,7 +25,7 @@ export function EmpreendimentoPage({ empreendimento }: { empreendimento: Empreen
         <div className="enterprise-hero-grid">
           <div>
             <p className="eyebrow">Empreendimento da Construtora Vital</p>
-            <h1>{empreendimento.name}</h1>
+            <h1>{empreendimento.headline}</h1>
             <p className="enterprise-summary">{empreendimento.summary}</p>
             <p className="enterprise-status">{empreendimento.status}</p>
             <div className="enterprise-actions">

@@ -11,13 +11,13 @@ import Link from "next/link";
 const needs = [
   { icon: KeyRound, title: "Comprar um imóvel", text: "Encontre o caminho para comprar com mais clareza.", href: "/comprar-imovel-em-pocos-de-caldas" },
   { icon: Building2, title: "Alugar um imóvel", text: "Converse sobre sua próxima moradia em Poços de Caldas.", href: "/alugar-imovel-em-pocos-de-caldas" },
-  { icon: Sparkles, title: "Vender meu imóvel", text: "Apresente seu imóvel para uma negociação bem conduzida.", href: "/contato" },
+  { icon: Sparkles, title: "Vender meu imóvel", text: "Converse sobre a venda do seu imóvel com atendimento próximo.", href: "/vender-imovel-em-pocos-de-caldas" },
   { icon: MapPinned, title: "Encontrar um terreno", text: "Fale sobre a área que você procura para o seu projeto.", href: "/terrenos-a-venda-em-pocos-de-caldas" },
 ];
 
 const services = [
   { number: "01", title: "Compra", text: "Ajuda para encontrar um imóvel de acordo com localização, orçamento e necessidades do cliente.", href: "/comprar-imovel-em-pocos-de-caldas" },
-  { number: "02", title: "Venda", text: "Atendimento para proprietários que desejam conversar sobre a venda do seu imóvel.", href: "/contato" },
+  { number: "02", title: "Venda", text: "Atendimento para proprietários que desejam conversar sobre a venda do seu imóvel.", href: "/vender-imovel-em-pocos-de-caldas" },
   { number: "03", title: "Aluguel", text: "Orientação para pessoas procurando imóveis para locação em Poços de Caldas.", href: "/alugar-imovel-em-pocos-de-caldas" },
   { number: "04", title: "Terrenos", text: "Conversa inicial para quem procura terrenos e áreas para o próximo projeto.", href: "/terrenos-a-venda-em-pocos-de-caldas" },
 ];
@@ -100,15 +100,14 @@ export default function Home() {
     </section>
     <section className="section section-sand" aria-labelledby="about-title">
       <div className="container about-grid">
-        <div className="portrait-frame"><Image src="/images/davimagnata.png" alt="Placeholder editável para foto do corretor" fill sizes="(max-width: 768px) 100vw, 40vw" />
+        <div className="portrait-frame"><Image src="/images/davimagnata.png" alt="Davi Meira Ribeiro, corretor de imóveis" fill sizes="(max-width: 768px) 100vw, 40vw" />
         </div>
         <div>
           <p className="eyebrow">Atendimento próximo</p>
           <h2 id="about-title">Uma conversa honesta antes de qualquer decisão.</h2>
-          <p className="body-large">A Magnata Imóveis é uma estrutura preparada para conectar pessoas e oportunidades imobiliárias em Poços de Caldas.</p>
-          <p className="body-copy">A apresentação do corretor, sua foto, nome, CRECI e trajetória serão adicionados aqui quando essas informações forem fornecidas.</p>
-          <div className="placeholder-note">[ NOME E DESCRIÇÃO DO CORRETOR A ADICIONAR ]</div>
-          <Link className="button button-dark" href="/sobre">Conheça a Magnata Imóveis <ArrowUpRight size={17} aria-hidden="true" /></Link>
+          <p className="body-large">Davi Meira Ribeiro oferece um atendimento imobiliário próximo, transparente e personalizado em Poços de Caldas.</p>
+          <p className="body-copy">Atuando na comercialização de empreendimentos da VITAL Empreendimentos, Davi entende as necessidades de cada cliente para ajudar a encontrar uma opção adequada.</p>
+          <Link className="button button-dark" href="/sobre">Conheça Davi Meira Ribeiro <ArrowUpRight size={17} aria-hidden="true" /></Link>
         </div>
       </div>
     </section>

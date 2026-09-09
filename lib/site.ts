@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Magnata Imóveis",
   shortName: "Magnata",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.magnataimoveis.com.br",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://magnata-imoveis.vercel.app",
   phone: "+55 35 9129-6207",
   whatsappNumber: "553591296207",
   address: {
