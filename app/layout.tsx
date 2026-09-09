@@ -21,11 +21,24 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: { default: "Magnata Imóveis | Imóveis em Poços de Caldas", template: "%s | Magnata Imóveis" },
-  description: "Compra, venda e aluguel de imóveis em Poços de Caldas - MG com atendimento personalizado da Magnata Imóveis.",
+  title: { default: "Magnata Imóveis | Imobiliária em Poços de Caldas", template: "%s | Magnata Imóveis" },
+  description: "Magnata Imóveis em Poços de Caldas atende compra, venda e aluguel de imóveis com foco em casas, apartamentos, terrenos e empreendimentos.",
   alternates: { canonical: "/" },
-  openGraph: { type: "website", locale: "pt_BR", url: siteConfig.url, siteName: siteConfig.name, title: "Magnata Imóveis | Imóveis em Poços de Caldas", description: "Atendimento imobiliário para comprar, vender ou alugar em Poços de Caldas.", images: [{ url: "/images/og-placeholder.svg", width: 1200, height: 630, alt: "Magnata Imóveis" }] },
-  twitter: { card: "summary_large_image", title: "Magnata Imóveis | Imóveis em Poços de Caldas", description: "Compra, venda e aluguel com atendimento local.", images: ["/images/og-placeholder.svg"] },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: "Magnata Imóveis | Imobiliária em Poços de Caldas",
+    description: "Compra, venda, aluguel e atendimento imobiliário em Poços de Caldas - MG.",
+    images: [{ url: "/images/davimagnata.png", width: 1200, height: 630, alt: "Corretor de imóveis da Magnata Imóveis em Poços de Caldas" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Magnata Imóveis | Imobiliária em Poços de Caldas",
+    description: "Compra, venda e aluguel de imóveis em Poços de Caldas com atendimento local.",
+    images: ["/images/davimagnata.png"],
+  },
   robots: { index: true, follow: true },
 };
 

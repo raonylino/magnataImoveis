@@ -4,6 +4,9 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://magnata-imoveis.vercel.app",
   phone: "+55 35 9129-6207",
   whatsappNumber: "553591296207",
+  logo: "/images/mi_logo.png",
+  image: "/images/davimagnata.png",
+  description: "Imobiliária em Poços de Caldas com atendimento para compra, venda, aluguel e empreendimentos.",
   address: {
     street: "R. Cap. Afonso Junqueira, 290 - Centro",
     locality: "Poços de Caldas",

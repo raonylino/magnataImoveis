@@ -5,8 +5,15 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { empreendimentos } from "@/lib/empreendimentos";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { ArrowUpRight, Building2, KeyRound, MapPinned, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Magnata Imóveis | Imobiliária em Poços de Caldas",
+  description: "Magnata Imóveis em Poços de Caldas ajuda na compra, venda e aluguel de imóveis, com atendimento para casas, apartamentos, terrenos e empreendimentos.",
+  alternates: { canonical: "/" },
+};
 
 const needs = [
   { icon: KeyRound, title: "Comprar um imóvel", text: "Encontre o caminho para comprar com mais clareza.", href: "/comprar-imovel-em-pocos-de-caldas" },
@@ -29,8 +36,8 @@ export default function Home() {
       <div className="container hero-content">
         <div className="hero-copy">
           <p className="eyebrow">Atendimento local · Poços de Caldas - MG</p>
-          <h1>Encontre seu imóvel em Poços de Caldas</h1>
-          <p className="hero-lead">Compra, venda e aluguel de imóveis em Poços de Caldas com atendimento personalizado.</p>
+          <h1>Magnata Imóveis em Poços de Caldas</h1>
+          <p className="hero-lead">Corretor e imobiliária em Poços de Caldas para compra, venda e aluguel de imóveis com atendimento personalizado.</p>
           <div className="hero-actions">
             <a className="button button-primary" href={buildWhatsAppLink("Olá! Encontrei a Magnata Imóveis pelo Google e quero encontrar um imóvel em Poços de Caldas.")}>
               <MessageCircle size={18} aria-hidden="true" /> Falar com um corretor</a>
@@ -71,11 +78,15 @@ export default function Home() {
       <div className="container two-column">
         <div>
           <p className="eyebrow eyebrow-gold">Conhecimento local</p>
-          <h2 id="local-title">Imóveis em Poços de Caldas para diferentes momentos.</h2>
+          <h2 id="local-title">Imobiliária em Poços de Caldas para diferentes momentos.</h2>
         </div>
         <div className="body-copy">
-          <p>Comprar, vender ou alugar um imóvel envolve escolhas importantes. Por isso, o atendimento começa entendendo sua necessidade, sua localização de interesse e o momento da negociação.</p><p>A Magnata Imóveis atende pessoas que procuram casas, apartamentos, terrenos e imóveis residenciais em Poços de Caldas, com conversa objetiva e acompanhamento próximo.</p>
-          <Link className="text-link text-link-light" href="/imoveis-em-pocos-de-caldas">Conheça nosso atendimento em Poços de Caldas <ArrowUpRight size={16} aria-hidden="true" /></Link>
+          <p>Comprar, vender ou alugar um imóvel envolve escolhas importantes. Por isso, o atendimento começa entendendo sua necessidade, sua localização de interesse e o momento da negociação.</p><p>A Magnata Imóveis atende pessoas que procuram casas, apartamentos, terrenos e empreendimentos em Poços de Caldas, com conversa objetiva e acompanhamento próximo.</p>
+          <div className="inline-link-stack">
+            <Link className="text-link text-link-light" href="/imoveis-em-pocos-de-caldas">Conheça nosso atendimento <ArrowUpRight size={16} aria-hidden="true" /></Link>
+            <Link className="text-link text-link-light" href="/corretor-de-imoveis-em-pocos-de-caldas">Corretor de imóveis <ArrowUpRight size={16} aria-hidden="true" /></Link>
+            <Link className="text-link text-link-light" href="/imobiliaria-em-pocos-de-caldas">Imobiliária em Poços de Caldas <ArrowUpRight size={16} aria-hidden="true" /></Link>
+          </div>
         </div>
       </div>
     </section>
